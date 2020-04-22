@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto/Roboto-Regular.ttf")
+}
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url("fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf")
+}
+body, ul, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #FF7931;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;    
+}
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 46px;
+    height: 47px;
+}
+nav {
+    width: 1171px;
+    margin: 0 auto;
+    height: 18px;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+     justify-content: space-between;
+     text-transform: uppercase;
+}
+
+/*****banner*****/
+.banner {
+    width: 100%;
+    height: 464px;
+    margin-top: 47px;
+    text-align: center;
+    background: url(img/otel.jpg);
+    background-size: cover;
+    background-position: 20%;
+    color: white;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: darken;
+    padding-top: 46px;
+}
+.banner h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 32px;
+}
+.banner p {
+    width: 456px;
+    height: 64px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 139px;
+}
+/*.banner::before {
+    content: 'новое';
+    width: 117px;
+    height: 25px;
+    display: block;
+    background: #FF7931;
+    color: white;
+    position: relative;
+    left: 135px;
+    top: -46px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height:25px;
+    text-transform: uppercase;
+}*/
+.banner div i{
+    background: url(img/icon/Vector.png);
+    display: block;
+    width: 27px;
+    height: 18px; 
+    margin: 0 auto;
+}
+.banner div {
+    width: 55px;
+    height: 39px;
+    border-radius: 50%;
+    background: #FF7931;
+    padding-top: 16px;
+    margin: 16px auto;
+    margin-top: 16px;
+}
+/***-------overview------***/
+main section:nth-child(1) {
+    padding-top: 44px;
+    padding-bottom: 51px;
+}
+main section:nth-child(1) h2 {
+    margin-bottom: 20px;
+}
+.overview {
+    width: 1174px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+article {
+    width: 370px;
+}
+
+article div {
+    width: 370px;
+    height: 203px;
+    margin-bottom: 20px;
+}
+.overview article:nth-child(1) {
+    background: url("img/art1.jpg");
+    height: 203px;
+    background-size: cover;
+} 
+.overview article:nth-child(2) {
+    background: url("img/art2.jpg") no-repeat;
+} 
+.overview article:nth-child(3) {
+    background: url("img/art3.jpg") no-repeat;
+    height: 203px;
+    background-size: cover;
+    background-position: 10%;
+} 
+.overview h3 {
+    font-family: PlayfairDisplay;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+    margin-bottom: 11px;
+}
+.overview p {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+/***-----abonements------***/
+.circle {
+    background: white;
+    width: 487px;
+    height: 487px;
+    border-radius: 400px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -110px;
+    padding: 110px;
+    margin-bottom: -110px;
+}
+main section:nth-child(2) {
+    background: #F7F7F7;
+    padding-top: 33px;
+    padding-bottom: 36px;
+}
+/*height: 566*/
+main section:nth-child(2) h2 {
+    margin-bottom: 35px;
+}
+.abonement {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+}
+.abonement div {
+    margin-top: 24px;
+    width: 370px; 
+    margin: 0 auto;
+}
+.abonement div p {
+    height: 63px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+}
+.abonement h3 {
+    font-family: PlayfairDisplay;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+    margin-bottom: 10px;
+}
+hr {
+    width: 100px;
+    height: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transform: rotate(0.1deg);
+    opacity: 0.4;
+    margin: 0 auto;
+    margin-bottom: 24px; 
+}
+
+button {
+    width: 170px;
+    height: 47px;
+    background: #FF7931;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/***-------footer-------***/
+footer {
+    background: #575757;
+    color: white;
+    margin-top: 50px;
+    padding-top:26px;
+    padding-bottom: 46px;
+    position: relative;
+    z-index: 1;
+}
+/*height: 295 + 50 сверху*/
+footer h2 {
+    text-transform: none;
+    margin-bottom: 32px;
+    font-family: PlayfairDisplay;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+}
+footer nav {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 46px;
+    border-bottom: 1px solid #FFFFFF;
+}
+footer div ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+footer div ul li {
+    width: 47px;
+    height: 47px;
+    background: white;
+    margin-left: 14px;
+    line-height: 47px;
+}
+li i {
+    display: block;
+    margin: 12px auto; 
+
+}
+.instagram {
+    background: url(img/icon/instagram_icon.svg); 
+    width: 24px;
+    height: 24px;
+}
+.facebook {
+    background: url(img/icon/facebook_icon.svg);
+    width: 12px;
+    height: 22px;
+}
+.twitter {
+    background: url(img/icon/twitter_icon.svg);
+    width: 22px;
+    height: 18px;
+    margin: 15px auto; 
+}
