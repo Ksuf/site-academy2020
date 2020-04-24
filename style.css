@@ -43,15 +43,20 @@ h1 {
 nav {
     width: 1171px;
     margin: 0 auto;
-    height: 18px;
 }
 ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
-     justify-content: space-between;
-     text-transform: uppercase;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-content: flex-start;
+    align-items: flex-end;
+    align-content: stretch;
 }
-
+ul li {
+    height: 18px;
+}
 /*****banner*****/
 .banner {
     width: 100%;
@@ -86,7 +91,7 @@ ul {
     text-align: center;
     margin-top: 139px;
 }
-/*.banner::before {
+/*.banner:hover::before {
     content: 'новое';
     width: 117px;
     height: 25px;
@@ -131,11 +136,14 @@ main section:nth-child(1) h2 {
     margin-bottom: 20px;
 }
 .overview {
-    width: 1174px;
+    max-width: 1174px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-end;
+    align-content: stretch;
     position: relative;
     z-index: 1;
 }
@@ -148,15 +156,15 @@ article div {
     height: 203px;
     margin-bottom: 20px;
 }
-.overview article:nth-child(1) {
+.overview article:nth-child(1) div {
     background: url("img/art1.jpg");
     height: 203px;
     background-size: cover;
 } 
-.overview article:nth-child(2) {
+.overview article:nth-child(2) div {
     background: url("img/art2.jpg") no-repeat;
 } 
-.overview article:nth-child(3) {
+.overview article:nth-child(3) div {
     background: url("img/art3.jpg") no-repeat;
     height: 203px;
     background-size: cover;
@@ -200,7 +208,7 @@ main section:nth-child(2) h2 {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-   text-align: center;
+    text-align: center;
 }
 .abonement div {
     margin-top: 24px;
@@ -310,4 +318,46 @@ li i {
     width: 22px;
     height: 18px;
     margin: 15px auto; 
+}
+@media (max-width: 1366px) {
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 70%;
+    }
+    .overview {
+        width: 98%;
+    }
+    article {
+    margin-bottom: 10px;
+    }
+  
+}
+@media (max-width: 1024px) {
+    ul {
+        align-content: flex-start;
+        align-content: stretch;
+        justify-content: left;
+        overflow: hidden;
+    }
+    ul li {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 740px) {
+    .circle {
+        background: none;
+        width: 370px;
+        padding: 110px 0;
+    }
+    .banner {
+        margin-top: 10px;
+    }
+    .banner h2 {
+        font-size: 36px;
+    }
 }
